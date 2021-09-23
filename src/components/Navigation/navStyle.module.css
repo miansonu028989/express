@@ -1,0 +1,32 @@
+.nav{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 10vh;
+    list-style: none;
+}
+.navbar{
+    margin: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.ul{
+    margin: 2rem;
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+.li{
+    padding: 2rem;
+    border: oldlace solid 3px;
+}
+.a{
+    
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
