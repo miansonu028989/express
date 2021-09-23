@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router ,Switch,Route } from 'react-router-dom'
 import AboutMe from './components/About/AboutMe';
 import ContectMe from './components/contects/Contects';
+import ItemsDetail from './components/ItemDetail/Itemdetail';
 
 
 export default class App extends Component {
@@ -16,6 +17,7 @@ export default class App extends Component {
           <Navbar/>
           <Route path='/about' exact component={AboutMe}/>
           <Route path='/Contects' component={ContectMe}/>
+          <Route path='/about/:id' component={ItemsDetail}/>
         </div>
       </Router>
     )
