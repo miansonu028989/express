@@ -6,7 +6,8 @@ export default class ItemsDetail extends Component {
         super(props);
         this.state=
         {
-            items:[],
+            items:{},
+            images:{},
         }     
     }
     imagefatch= async ()=>{
@@ -15,14 +16,16 @@ export default class ItemsDetail extends Component {
         const items= await data.json();
         console.log(items);
         this.setState({items:items.data.item})
+        this.setState({images:items.data.item.images})
         console.log(this.state.items);
+        console.log(this.state.images);
     }
 
     render() {
         return (
             <div>
             <button type="button" onClick={this.imagefatch}>Show</button>
-                <h1>{this.state.items.name}</h1>
+                <img src={this.state.images.background} alt="..."/>
             </div>
         )
     }
