@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import  nav  from "./navStyle.module.css";
+import About from '../About/AboutMe';
+import AboutMe from '../About/AboutMe';
+import { Link } from "react-router-dom";
 export default class Navbar extends Component {
     render() {
         return (
@@ -11,8 +14,12 @@ export default class Navbar extends Component {
                         </h2>
                     </div>
                     <ul className={`${nav.ul}`}>
-                        <li className={`${nav.li}`}><a href={``} className={`${nav.a}`}>About Me</a></li>
-                        <li className={`${nav.li}`}><a href={``} className={`${nav.a}`}>contect Me</a></li>
+                        <Link to="/about">
+                            <li className={`${nav.li}`}><a href={`${About}`} className={`${nav.a}`}>About Me</a></li>
+                        </Link>
+                        <Link to='/Contects'>
+                            <li className={`${nav.li}`}><a href={`${About}`} className={`${nav.a}`}>Contect Me</a></li>
+                        </Link>
                     </ul>
                 </nav>
             </div>
